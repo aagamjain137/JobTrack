@@ -78,7 +78,7 @@
                 <div style="font-size: 1rem; font-weight: 600; color: var(--text-dark); margin-top: 0.2rem;">
                     <c:choose>
                         <c:when test="${not empty application.salary}">
-                            $<fmt:formatNumber value="${application.salary}" type="number" minFractionDigits="2" maxFractionDigits="2" />
+                            &#8377;<fmt:formatNumber value="${application.salary}" type="number" minFractionDigits="2" maxFractionDigits="2" />
                         </c:when>
                         <c:otherwise>
                             <span style="color: var(--text-light); font-weight: normal;">Not specified</span>

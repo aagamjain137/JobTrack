@@ -39,14 +39,14 @@
                 <div class="form-group">
                     <label for="companyName" class="form-label">Company Name <span class="required">*</span></label>
                     <input type="text" id="companyName" name="companyName" class="form-control"
-                           placeholder="e.g. Google, Microsoft, Stripe"
+                           placeholder="e.g. Google, Microsoft, TCS"
                            value="<c:out value="${isEdit ? application.companyName : companyName}" />" required autofocus />
                 </div>
 
                 <div class="form-group">
                     <label for="jobRole" class="form-label">Job Role / Title <span class="required">*</span></label>
                     <input type="text" id="jobRole" name="jobRole" class="form-control"
-                           placeholder="e.g. Senior Software Engineer"
+                           placeholder="e.g. Software Engineer"
                            value="<c:out value="${isEdit ? application.jobRole : jobRole}" />" required />
                 </div>
             </div>
@@ -55,16 +55,16 @@
                 <div class="form-group">
                     <label for="location" class="form-label">Location <span class="required">*</span></label>
                     <input type="text" id="location" name="location" class="form-control"
-                           placeholder="e.g. New York, NY (Remote or Hybrid)"
+                           placeholder="e.g. Bengaluru, India (Remote or Hybrid)"
                            value="<c:out value="${isEdit ? application.location : location}" />" required />
                 </div>
 
                 <div class="form-group">
-                    <label for="salary" class="form-label">Expected / Offered Salary (USD)</label>
+                    <label for="salary" class="form-label">Expected / Offered Salary (INR)</label>
                     <input type="number" step="0.01" min="0" id="salary" name="salary" class="form-control"
-                           placeholder="e.g. 145000.00"
+                           placeholder="e.g. 1200000.00"
                            value="<c:out value="${isEdit ? application.salary : salary}" />" />
-                    <div class="form-hint">Optional. Numerical value up to 2 decimal places.</div>
+                    <div class="form-hint">Optional. Annual CTC in INR (up to 2 decimal places).</div>
                 </div>
             </div>
 

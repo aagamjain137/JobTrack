@@ -140,7 +140,7 @@
                                         <td>
                                             <c:choose>
                                                 <c:when test="${not empty app.salary}">
-                                                    $<fmt:formatNumber value="${app.salary}" type="number" minFractionDigits="2" maxFractionDigits="2" />
+                                                    &#8377;<fmt:formatNumber value="${app.salary}" type="number" minFractionDigits="2" maxFractionDigits="2" />
                                                 </c:when>
                                                 <c:otherwise>
                                                     <span style="color: var(--text-light);">&mdash;</span>
