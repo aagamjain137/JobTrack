@@ -122,7 +122,7 @@ The application implements a clean **Model-View-Controller (MVC)** architectural
 
 ## 5. Database Schema & Relational Design
 
-The database schema is defined in [`database/jobtrack_schema.sql`](file:///D:/JobTrack/database/jobtrack_schema.sql):
+The database schema is defined in [`database/jobtrack_schema.sql`](database/jobtrack_schema.sql):
 
 ```sql
 -- Database Initialization
@@ -188,7 +188,8 @@ USE `jobtrack_db`;
 
 ### Step 1: Clone or Open Project
 ```powershell
-cd D:\JobTrack
+git clone https://github.com/aagamjain137/JobTrack.git
+cd JobTrack
 ```
 
 ---
@@ -201,7 +202,7 @@ mysql -u root -p < database\jobtrack_schema.sql
 ```
 *Or execute inside the MySQL interactive shell:*
 ```sql
-SOURCE D:/JobTrack/database/jobtrack_schema.sql;
+SOURCE database/jobtrack_schema.sql;
 ```
 
 > **Default Seed User Account:**
@@ -330,5 +331,5 @@ D:\JobTrack/
 
 ## 8. License & Author
 
-- **Author:** JobTrack Engineering Team
+- **Author:** Aagam Jain
 - **License:** Open Source under the [MIT License](https://opensource.org/licenses/MIT).
