@@ -1,0 +1,23 @@
+# ==============================================================================
+# JobTrack Database & HikariCP Configuration Template
+# 
+# INSTRUCTIONS:
+# 1. Copy this file to 'db.properties' in the same directory:
+#    src/main/resources/db.properties
+# 2. Update the credentials below to match your local/remote MySQL 8.0 instance.
+# 3. 'db.properties' is git-ignored to prevent credential leaks.
+# ==============================================================================
+
+# Database Connection Settings
+db.url=jdbc:mysql://localhost:3306/jobtrack_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&characterEncoding=UTF-8
+db.username=root
+db.password=your_mysql_password_here
+db.driver=com.mysql.cj.jdbc.Driver
+
+# HikariCP Connection Pool Settings
+hikari.poolName=JobTrackHikariPool
+hikari.maximumPoolSize=10
+hikari.minimumIdle=2
+hikari.idleTimeout=30000
+hikari.connectionTimeout=20000
+hikari.maxLifetime=1800000

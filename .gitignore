@@ -1,0 +1,27 @@
+# Maven build artifacts
+target/
+*.war
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse project files
+.settings/
+.classpath
+.project
+
+# VS Code project files
+.vscode/
+
+# Environment-specific configuration & secrets
+db.properties
+src/main/resources/db.properties
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+*.log
